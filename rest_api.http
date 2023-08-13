@@ -1,0 +1,11 @@
+GET http://127.0.0.1:5000/test
+
+###
+
+POST http://127.0.0.1:5000/test?city=gdansk
+Content-Type: application/json
+
+{
+    "id": 5,
+    "name": "Sławek"
+}
