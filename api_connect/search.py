@@ -1,4 +1,5 @@
 import requests
+import json 
 
 print('Book name (format: name+chapter:verse)')
 book_name = input('Title: ')
@@ -11,5 +12,6 @@ if (response.status_code != requests.codes.ok):
     print('Something went wrong.')
 else:
     print(response.json())
+    print(json.dumps(response.json(), indent=4))
 
 print(response.status_code)
